@@ -1,0 +1,8 @@
+appId=9b718a8u8cprint
+key=u8cprint
+username=admin
+expiredTs=1471776321654
+expiredDate=2020-08-21 18:45:21
+appCode=u8cprint
+secret=ascrdm
+print_token=Y0hKcGJuUmZkRzlyWlc0PQ==

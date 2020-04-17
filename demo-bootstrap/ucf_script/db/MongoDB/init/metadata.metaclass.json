@@ -1,0 +1,3337 @@
+{ 
+    "_id" : ObjectId("5d39a5e4461ba00060f9adf5"), 
+    "fullClassName" : null, 
+    "tableName" : "cpu_ct_material", 
+    "metaIndex" : null, 
+    "refModelName" : null, 
+    "extMode" : null, 
+    "dataPowerScene" : null, 
+    "uri" : "asso.assoComp.Material", 
+    "metaType" : "Class", 
+    "description" : null, 
+    "name" : "Material", 
+    "displayName" : "合同物料子表", 
+    "version" : NumberInt(187), 
+    "service" : null, 
+    "id" : "2a3db2ff-68e9-4190-bdb8-e74b2828c157", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "ownedAttribute" : [
+        {
+            "fieldName" : "material_name", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "255", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.materialName", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "materialName", 
+            "displayName" : "采购物料名称", 
+            "version" : NumberInt(28), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "ede4c6ee-50dd-4415-800f-541f232000c0", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Material", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "tax_price", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.taxPrice", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "taxPrice", 
+            "displayName" : "含税单价", 
+            "version" : NumberInt(28), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "6e8fec49-1c75-4168-92b8-91932d861fea", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Material", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "num", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.num", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "num", 
+            "displayName" : "数量", 
+            "version" : NumberInt(28), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "12d76ca2-782f-4175-90d1-ea4a48a12cf6", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Material", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "tax_money", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.taxMoney", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "taxMoney", 
+            "displayName" : "含税金额", 
+            "version" : NumberInt(28), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "7eabf582-9eb0-4bc4-a446-610a977a900b", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Material", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "id", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : true, 
+            "nullable" : false, 
+            "length" : "64", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.id", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "id", 
+            "displayName" : "ID", 
+            "version" : NumberInt(22), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "isKey" : true, 
+            "id" : "d7de7fb3-756f-4265-8111-693b495e3232", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "pubts", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : true, 
+            "dataPowerType" : null, 
+            "uri" : "asso.assoComp.Material.pubts", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "pubts", 
+            "displayName" : "时间戳", 
+            "version" : NumberInt(22), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "DateTime", 
+            "id" : "e01a59d9-42f2-42bf-bfd7-d0347fd2d809", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "Timestamp", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "displayName" : "合同主表id", 
+            "metaClass" : null, 
+            "name" : "contractId", 
+            "dataType" : {
+                "name" : "字符型", 
+                "id" : "String", 
+                "metaType" : "PrimitiveType", 
+                "status" : "0", 
+                "extendTag" : {
+
+                }
+            }, 
+            "referDoc" : null, 
+            "visibility" : null, 
+            "defaultValue" : null, 
+            "isReadOnly" : null, 
+            "isUnique" : null, 
+            "isID" : null, 
+            "metaModelClassId" : null, 
+            "aggregation" : null, 
+            "type" : null, 
+            "modelType" : "EntityAttrModel", 
+            "is_mul_language" : "false", 
+            "id" : "4ab6d63c-d898-40e2-9ddb-12f9e09ef3fb", 
+            "uri" : "asso.assoComp.Material.contractId", 
+            "metaType" : "Property", 
+            "terms" : [
+
+            ], 
+            "description" : null, 
+            "metadataLevel" : "0", 
+            "status" : "1", 
+            "tenantId" : null, 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+
+                }
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null, 
+            "modifyIndustry" : null, 
+            "fieldName" : "contractId", 
+            "nullable" : "false", 
+            "notSerialize" : "false", 
+            "typeName" : null, 
+            "dynamicTable" : null, 
+            "source" : "false", 
+            "resid" : null, 
+            "authorization" : "false", 
+            "minValue" : null, 
+            "feature" : "false", 
+            "accessPowerGroup" : null, 
+            "share" : "false", 
+            "precise" : null, 
+            "key" : "false", 
+            "modelid" : "1dd1313c-61c4-4210-a1b5-106fc63090dc", 
+            "defaultMeasureAttribute" : "false", 
+            "globalization" : "false", 
+            "maxValue" : null, 
+            "length" : "36", 
+            "readOnly" : "false", 
+            "createIndustry" : null, 
+            "defaultDimensionAttribute" : "false", 
+            "help" : null, 
+            "refModelName" : null, 
+            "sequence" : null, 
+            "classID" : null, 
+            "hide" : "false", 
+            "parentdataid" : "2a3db2ff-68e9-4190-bdb8-e74b2828c157", 
+            "dbtype" : null, 
+            "dataTypeStyle" : null, 
+            "fieldType" : null
+        }
+    ], 
+    "modelType" : "EntityAttrModel", 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "createTime" : "2019-09-09 19:41:02:881", 
+    "modifyTime" : ISODate("2019-10-06T10:37:28.917+0000"), 
+    "general" : "d421b3fa-9bcd-4db2-b43b-fbc55db29ae7", 
+    "generalName" : "基类", 
+    "isOldData" : true
+}
+{ 
+    "_id" : ObjectId("5d39a5e4461ba00060f9adf6"), 
+    "fullClassName" : null, 
+    "tableName" : "cpu_ct_payterm", 
+    "metaIndex" : null, 
+    "refModelName" : null, 
+    "extMode" : null, 
+    "dataPowerScene" : null, 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+    "metaType" : "Class", 
+    "description" : null, 
+    "name" : "Payterm", 
+    "displayName" : "合同付款协议子表", 
+    "version" : NumberInt(72), 
+    "service" : null, 
+    "id" : "ac69e05a-fa72-474b-8cba-1288bfed118d", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "ownedAttribute" : [
+        {
+            "fieldName" : "pay_period", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "11", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payPeriod", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payPeriod", 
+            "displayName" : "付款阶段", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Integer", 
+            "id" : "7bbae1f2-542e-40a2-add8-9ad2684f4c18", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Integer", 
+                "name" : "整数", 
+                "uri" : "Integer", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_point", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "20", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payPoint", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payPoint", 
+            "displayName" : "付款起点编码", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "b821efa6-8f04-40f0-9c91-2a9c926a112d", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_point_name", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "40", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payPointName", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payPointName", 
+            "displayName" : "付款起点名称", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "1683c37f-e91c-46d1-b545-472e5f21c420", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_point_after_day", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "11", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payPointAfterDay", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payPointAfterDay", 
+            "displayName" : "账期天数", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Integer", 
+            "id" : "64ff3909-af5b-44eb-b02b-474c430d2acd", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Integer", 
+                "name" : "整数", 
+                "uri" : "Integer", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_ratio", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payRatio", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payRatio", 
+            "displayName" : "付款比例", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "93e5edbd-72e1-43e5-84c1-a35699efa1e9", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_tax_money", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.payTaxMoney", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payTaxMoney", 
+            "displayName" : "付款金额", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "56c5da64-68b3-4de8-9184-3ff06399f439", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "id", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : true, 
+            "nullable" : false, 
+            "length" : "64", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.id", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "id", 
+            "displayName" : "ID", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "isKey" : true, 
+            "id" : "d7de7fb3-756f-4265-8111-693b495e3232", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "pubts", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : true, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.pubts", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "pubts", 
+            "displayName" : "时间戳", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "DateTime", 
+            "id" : "e01a59d9-42f2-42bf-bfd7-d0347fd2d809", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "Timestamp", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "id", 
+            "isKey" : true, 
+            "nullable" : false, 
+            "length" : "64", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.id", 
+            "description" : null, 
+            "name" : "id", 
+            "displayName" : "ID", 
+            "type" : "String", 
+            "id" : "b35f8cce-864e-4a0d-b15e-b6b214d1d186", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "metaType" : "Property", 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "createTime" : "2019-09-09 20:21:55:321", 
+            "modifyTime" : "2019-09-09 20:21:55:321", 
+            "version" : NumberInt(6)
+        }, 
+        {
+            "fieldName" : "pubts", 
+            "isKey" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Payterm.pubts", 
+            "description" : null, 
+            "name" : "pubts", 
+            "displayName" : "时间戳", 
+            "type" : "DateTime", 
+            "id" : "1a23a99c-2cc6-417c-92ec-79b7b9377204", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Payterm", 
+            "terms" : [
+
+            ], 
+            "metaType" : "Property", 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "日期时间", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "createTime" : "2019-09-09 20:21:55:321", 
+            "modifyTime" : "2019-09-09 20:21:55:321", 
+            "version" : NumberInt(6)
+        }
+    ], 
+    "modelType" : "EntityAttrModel", 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "createTime" : "2019-09-09 20:22:15:817", 
+    "modifyTime" : ISODate("2019-10-06T10:37:27.044+0000"), 
+    "general" : "d421b3fa-9bcd-4db2-b43b-fbc55db29ae7", 
+    "generalName" : "基类", 
+    "isOldData" : true
+}
+{ 
+    "_id" : ObjectId("5d39a5e4461ba00060f9adf7"), 
+    "fullClassName" : null, 
+    "tableName" : "cpu_ct_term", 
+    "metaIndex" : null, 
+    "refModelName" : null, 
+    "extMode" : null, 
+    "dataPowerScene" : null, 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm", 
+    "metaType" : "Class", 
+    "description" : null, 
+    "name" : "Term", 
+    "displayName" : "合同条款子表", 
+    "version" : NumberInt(30), 
+    "service" : null, 
+    "id" : "372410b0-3f7b-437f-bfaa-34c19c395229", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "ownedAttribute" : [
+        {
+            "fieldName" : "term_code", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "30", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm.termCode", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "termCode", 
+            "displayName" : "条款编码", 
+            "version" : NumberInt(5), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "b712fe63-31b0-41bb-8b95-5adecfab502b", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "term_name", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "50", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm.termName", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "termName", 
+            "displayName" : "条款名称", 
+            "version" : NumberInt(5), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "4001cff7-8eb1-40d5-bf25-4f565ef2e9f0", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "term_content", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "1000", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm.termContent", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "termContent", 
+            "displayName" : "条款内容", 
+            "version" : NumberInt(5), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "c2131f9e-d200-4ea4-ab33-50497ff415ee", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "id", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : true, 
+            "nullable" : false, 
+            "length" : "64", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm.id", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "id", 
+            "displayName" : "ID", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "isKey" : true, 
+            "id" : "d7de7fb3-756f-4265-8111-693b495e3232", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "pubts", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : true, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.ContractTerm.pubts", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "pubts", 
+            "displayName" : "时间戳", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "DateTime", 
+            "id" : "e01a59d9-42f2-42bf-bfd7-d0347fd2d809", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "Timestamp", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }
+        }
+    ], 
+    "modelType" : "EntityAttrModel", 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "createTime" : "2019-07-25 20:53:00:618", 
+    "modifyTime" : ISODate("2019-10-06T10:37:26.053+0000"), 
+    "general" : "d421b3fa-9bcd-4db2-b43b-fbc55db29ae7", 
+    "generalName" : "基类", 
+    "isOldData" : true
+}
+{ 
+    "_id" : ObjectId("5d5269ec724beb005b9cf22e"), 
+    "fullClassName" : null, 
+    "tableName" : "cpu_ct", 
+    "metaIndex" : null, 
+    "refModelName" : null, 
+    "extMode" : null, 
+    "dataPowerScene" : null, 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+    "metaType" : "Class", 
+    "description" : null, 
+    "name" : "Contract", 
+    "displayName" : "采购合同", 
+    "version" : NumberInt(95), 
+    "service" : null, 
+    "primary" : "true", 
+    "id" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "ownedAttribute" : [
+        {
+            "fieldName" : "subject", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "255", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.subject", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "subject", 
+            "displayName" : "合同标题", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "b9124bbf-26a1-41c3-937f-55eb9c3bf3ac", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+                {
+                    "_id" : ObjectId("5cb436b26158b6004e05ddb9"), 
+                    "code" : "NAME", 
+                    "name" : "名称", 
+                    "description" : "", 
+                    "id" : "e28b37e1-737f-4833-9000-d41296daeca9", 
+                    "parentId" : "fd8ae8a6-0837-4117-bb68-8b3e7f281cb6", 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "名称"
+                        }
+                    }, 
+                    "createTime" : "2019-04-15 15:45:54:334", 
+                    "modifyTime" : "2019-04-15 15:37:52:306", 
+                    "version" : NumberInt(1)
+                }, 
+                {
+                    "_id" : ObjectId("5ccfa48ea82649004e7d4013"), 
+                    "code" : "isBusinessLog", 
+                    "name" : "支持业务日志", 
+                    "description" : "", 
+                    "targetType" : "CLASS", 
+                    "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87", 
+                    "categories" : [
+                        {
+                            "code" : "logsManagement", 
+                            "modifyTime" : "2019-05-06 11:04:55:295", 
+                            "createTime" : "2019-05-06 11:04:55:295", 
+                            "name" : "日志管理", 
+                            "description" : "", 
+                            "_id" : ObjectId("5ccfa457a82649004e7d4012"), 
+                            "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "日志管理"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "支持业务日志"
+                        }
+                    }, 
+                    "createTime" : "2019-05-06 11:05:50:876", 
+                    "modifyTime" : "2019-05-06 11:06:25:958", 
+                    "version" : NumberInt(1)
+                }
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "bill_no", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "100", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.billNo", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "billNo", 
+            "displayName" : "合同编码", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "87163b4f-c58e-4a0b-b536-421b201ed80c", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+                {
+                    "_id" : ObjectId("5cb436656158b6004e05ddb8"), 
+                    "code" : "CODE", 
+                    "name" : "编码", 
+                    "description" : "", 
+                    "id" : "a999b077-c35c-4dfb-8880-3411d5e8597b", 
+                    "parentId" : "fd8ae8a6-0837-4117-bb68-8b3e7f281cb6", 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "编码"
+                        }
+                    }, 
+                    "createTime" : "2019-04-15 15:44:37:696", 
+                    "modifyTime" : "2019-04-15 15:37:43:623", 
+                    "version" : NumberInt(2)
+                }, 
+                {
+                    "_id" : ObjectId("5ccfa48ea82649004e7d4013"), 
+                    "code" : "isBusinessLog", 
+                    "name" : "支持业务日志", 
+                    "description" : "", 
+                    "targetType" : "CLASS", 
+                    "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87", 
+                    "categories" : [
+                        {
+                            "code" : "logsManagement", 
+                            "modifyTime" : "2019-05-06 11:04:55:295", 
+                            "createTime" : "2019-05-06 11:04:55:295", 
+                            "name" : "日志管理", 
+                            "description" : "", 
+                            "_id" : ObjectId("5ccfa457a82649004e7d4012"), 
+                            "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "日志管理"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "支持业务日志"
+                        }
+                    }, 
+                    "createTime" : "2019-05-06 11:05:50:876", 
+                    "modifyTime" : "2019-05-06 11:06:25:958", 
+                    "version" : NumberInt(1)
+                }, 
+                {
+                    "_id" : ObjectId("5bbb05856b2f070034359759"), 
+                    "id" : "9dffcf39-8045-4aeb-a549-08f73738649a", 
+                    "code" : "isCoding", 
+                    "name" : "是否可编码", 
+                    "description" : "", 
+                    "targetType" : "PROPERTY", 
+                    "categories" : [
+                        {
+                            "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7", 
+                            "code" : "encodingRules", 
+                            "name" : "编码规则", 
+                            "description" : "", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "编码规则"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "是否可编码"
+                        }
+                    }, 
+                    "modifyTime" : "2019-03-23 14:54:49:166", 
+                    "version" : NumberInt(27)
+                }
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "bill_type", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "50", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.billType", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "billType", 
+            "displayName" : "合同类型", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "24d515b6-1d41-4de8-b268-b07c48976532", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+                {
+                    "_id" : ObjectId("5bbb05856b2f070034359759"), 
+                    "id" : "9dffcf39-8045-4aeb-a549-08f73738649a", 
+                    "code" : "isCoding", 
+                    "name" : "是否可编码", 
+                    "description" : "", 
+                    "targetType" : "PROPERTY", 
+                    "categories" : [
+                        {
+                            "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7", 
+                            "code" : "encodingRules", 
+                            "name" : "编码规则", 
+                            "description" : "", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "编码规则"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "是否可编码"
+                        }
+                    }, 
+                    "modifyTime" : "2019-03-23 14:54:49:166", 
+                    "version" : NumberInt(27)
+                }
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "bill_status", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "10", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.billStatus", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "billStatus", 
+            "displayName" : "单据状态", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "合同状态", 
+            "id" : "e45e7e15-a759-4803-b83f-0140936da3cb", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "1cb3bd86-382c-4639-b97d-61581d08450d", 
+                "name" : "合同状态", 
+                "metaType" : "Enumeration"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "tax_money", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.taxMoney", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "taxMoney", 
+            "displayName" : "含税金额", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "6013429a-7099-4f1f-8f0d-068497689db6", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "subscribe_date", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.subscribeDate", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "subscribeDate", 
+            "displayName" : "合同签订日期", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "DateTime", 
+            "id" : "80cfa455-9a75-4826-8e1a-57aff663896a", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "日期时间", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "total_num", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "28", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.totalNum", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "totalNum", 
+            "displayName" : "总数量", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "Decimal", 
+            "iScale" : NumberInt(8), 
+            "id" : "8e9ee7a3-88ca-484b-b62d-8c2ba7c0bb57", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Real", 
+                "name" : "数值型", 
+                "uri" : "Real", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "pay_agreement", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "200", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.payAgreement", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "payAgreement", 
+            "displayName" : "付款协议", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "d826fe43-bb44-4bb9-8be9-a3c194dd8357", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "fieldName" : "outer_ct_billcode", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : "40", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : "2", 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.outerCtBillcode", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "outerCtBillcode", 
+            "displayName" : "外部合同号", 
+            "version" : NumberInt(7), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "id" : "5433cfeb-41ab-4112-a19d-18d59e47739d", 
+            "parentUri" : "devmodel-cn-mainsub-multiple.contract.Contract", 
+            "terms" : [
+                {
+                    "_id" : ObjectId("5cb436586158b6004e05ddb7"), 
+                    "code" : "ID", 
+                    "name" : "ID", 
+                    "description" : "", 
+                    "id" : "815cdc95-09ae-4815-8c72-ff36cd86be54", 
+                    "parentId" : "fd8ae8a6-0837-4117-bb68-8b3e7f281cb6", 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "ID"
+                        }
+                    }, 
+                    "createTime" : "2019-04-15 15:44:24:087", 
+                    "modifyTime" : "2019-04-15 15:44:24:087"
+                }, 
+                {
+                    "_id" : ObjectId("5ccfa48ea82649004e7d4013"), 
+                    "code" : "isBusinessLog", 
+                    "name" : "支持业务日志", 
+                    "description" : "", 
+                    "targetType" : "CLASS", 
+                    "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87", 
+                    "categories" : [
+                        {
+                            "code" : "logsManagement", 
+                            "modifyTime" : "2019-05-06 11:04:55:295", 
+                            "createTime" : "2019-05-06 11:04:55:295", 
+                            "name" : "日志管理", 
+                            "description" : "", 
+                            "_id" : ObjectId("5ccfa457a82649004e7d4012"), 
+                            "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "日志管理"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "支持业务日志"
+                        }
+                    }, 
+                    "createTime" : "2019-05-06 11:05:50:876", 
+                    "modifyTime" : "2019-05-06 11:06:25:958", 
+                    "version" : NumberInt(1)
+                }, 
+                {
+                    "_id" : ObjectId("5bbb05856b2f070034359759"), 
+                    "id" : "9dffcf39-8045-4aeb-a549-08f73738649a", 
+                    "code" : "isCoding", 
+                    "name" : "是否可编码", 
+                    "description" : "", 
+                    "targetType" : "PROPERTY", 
+                    "categories" : [
+                        {
+                            "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7", 
+                            "code" : "encodingRules", 
+                            "name" : "编码规则", 
+                            "description" : "", 
+                            "parentId" : "0", 
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                }, 
+                                "en_US" : {
+
+                                }, 
+                                "zh_CN" : {
+                                    "name" : "编码规则"
+                                }
+                            }
+                        }
+                    ], 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "是否可编码"
+                        }
+                    }, 
+                    "modifyTime" : "2019-03-23 14:54:49:166", 
+                    "version" : NumberInt(27)
+                }
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "字符型", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }, 
+            "isKey" : false
+        }, 
+        {
+            "displayName" : "合同条款子表", 
+            "metaClass" : null, 
+            "name" : "ContractTerm", 
+            "dataType" : {
+                "name" : "合同条款子表", 
+                "id" : "372410b0-3f7b-437f-bfaa-34c19c395229", 
+                "metaType" : "Class", 
+                "status" : "0", 
+                "extendTag" : {
+
+                }
+            }, 
+            "referDoc" : null, 
+            "visibility" : null, 
+            "defaultValue" : null, 
+            "isReadOnly" : null, 
+            "isUnique" : null, 
+            "isID" : null, 
+            "metaModelClassId" : null, 
+            "aggregation" : null, 
+            "type" : null, 
+            "modelType" : "EntityAttrModel", 
+            "is_mul_language" : "false", 
+            "id" : "20f891e6-b6a3-4199-8092-0678258e0bd5", 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.ContractTerm", 
+            "metaType" : "Property", 
+            "terms" : [
+
+            ], 
+            "description" : null, 
+            "metadataLevel" : "0", 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+
+                }
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null, 
+            "modifyIndustry" : null, 
+            "fieldName" : "ContractTerm", 
+            "nullable" : "false", 
+            "notSerialize" : "false", 
+            "typeName" : null, 
+            "dynamicTable" : null, 
+            "source" : "false", 
+            "resid" : null, 
+            "authorization" : "false", 
+            "minValue" : null, 
+            "feature" : "false", 
+            "accessPowerGroup" : null, 
+            "share" : "false", 
+            "precise" : null, 
+            "key" : "false", 
+            "modelid" : "1dd1313c-61c4-4210-a1b5-106fc63090dc", 
+            "defaultMeasureAttribute" : "false", 
+            "globalization" : "false", 
+            "maxValue" : null, 
+            "length" : null, 
+            "readOnly" : "false", 
+            "createIndustry" : null, 
+            "defaultDimensionAttribute" : "false", 
+            "help" : null, 
+            "refModelName" : null, 
+            "sequence" : null, 
+            "classID" : null, 
+            "hide" : "false", 
+            "parentdataid" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "dbtype" : null, 
+            "dataTypeStyle" : "302", 
+            "fieldType" : null
+        }, 
+        {
+            "displayName" : "合同付款协议子表", 
+            "metaClass" : null, 
+            "name" : "Payterm", 
+            "dataType" : {
+                "name" : "合同付款协议子表", 
+                "id" : "ac69e05a-fa72-474b-8cba-1288bfed118d", 
+                "metaType" : "Class", 
+                "status" : "0", 
+                "extendTag" : {
+
+                }
+            }, 
+            "referDoc" : null, 
+            "visibility" : null, 
+            "defaultValue" : null, 
+            "isReadOnly" : null, 
+            "isUnique" : null, 
+            "isID" : null, 
+            "metaModelClassId" : null, 
+            "aggregation" : null, 
+            "type" : null, 
+            "modelType" : "EntityAttrModel", 
+            "is_mul_language" : "false", 
+            "id" : "e0b04e4d-ba4e-4af6-bcd5-d7008103047b", 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.Payterm", 
+            "metaType" : "Property", 
+            "terms" : [
+
+            ], 
+            "description" : null, 
+            "metadataLevel" : "0", 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+
+                }
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null, 
+            "modifyIndustry" : null, 
+            "fieldName" : "Payterm", 
+            "nullable" : "false", 
+            "notSerialize" : "false", 
+            "typeName" : null, 
+            "dynamicTable" : null, 
+            "source" : "false", 
+            "resid" : null, 
+            "authorization" : "false", 
+            "minValue" : null, 
+            "feature" : "false", 
+            "accessPowerGroup" : null, 
+            "share" : "false", 
+            "precise" : null, 
+            "key" : "false", 
+            "modelid" : "1dd1313c-61c4-4210-a1b5-106fc63090dc", 
+            "defaultMeasureAttribute" : "false", 
+            "globalization" : "false", 
+            "maxValue" : null, 
+            "length" : null, 
+            "readOnly" : "false", 
+            "createIndustry" : null, 
+            "defaultDimensionAttribute" : "false", 
+            "help" : null, 
+            "refModelName" : null, 
+            "sequence" : null, 
+            "classID" : null, 
+            "hide" : "false", 
+            "parentdataid" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "dbtype" : null, 
+            "dataTypeStyle" : "302", 
+            "fieldType" : null
+        }, 
+        {
+            "displayName" : "合同物料子表", 
+            "metaClass" : null, 
+            "name" : "Material", 
+            "dataType" : {
+                "name" : "合同物料子表", 
+                "id" : "2a3db2ff-68e9-4190-bdb8-e74b2828c157", 
+                "metaType" : "Class", 
+                "status" : "0", 
+                "extendTag" : {
+
+                }
+            }, 
+            "referDoc" : null, 
+            "visibility" : null, 
+            "defaultValue" : null, 
+            "isReadOnly" : null, 
+            "isUnique" : null, 
+            "isID" : null, 
+            "metaModelClassId" : null, 
+            "aggregation" : null, 
+            "type" : null, 
+            "modelType" : "EntityAttrModel", 
+            "is_mul_language" : "false", 
+            "id" : "159492af-c7b5-45be-b700-56932d203094", 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.Material", 
+            "metaType" : "Property", 
+            "terms" : [
+
+            ], 
+            "description" : null, 
+            "metadataLevel" : "0", 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+
+                }
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null, 
+            "modifyIndustry" : null, 
+            "fieldName" : "Material", 
+            "nullable" : "false", 
+            "notSerialize" : "false", 
+            "typeName" : null, 
+            "dynamicTable" : null, 
+            "source" : "false", 
+            "resid" : null, 
+            "authorization" : "false", 
+            "minValue" : null, 
+            "feature" : "false", 
+            "accessPowerGroup" : null, 
+            "share" : "false", 
+            "precise" : null, 
+            "key" : "false", 
+            "modelid" : "1dd1313c-61c4-4210-a1b5-106fc63090dc", 
+            "defaultMeasureAttribute" : "false", 
+            "globalization" : "false", 
+            "maxValue" : null, 
+            "length" : null, 
+            "readOnly" : "false", 
+            "createIndustry" : null, 
+            "defaultDimensionAttribute" : "false", 
+            "help" : null, 
+            "refModelName" : null, 
+            "sequence" : null, 
+            "classID" : null, 
+            "hide" : "false", 
+            "parentdataid" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "dbtype" : null, 
+            "dataTypeStyle" : "302", 
+            "fieldType" : null
+        }, 
+        {
+            "fieldName" : "id", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : true, 
+            "nullable" : false, 
+            "length" : "64", 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : false, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.id", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "id", 
+            "displayName" : "ID", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "String", 
+            "isKey" : true, 
+            "id" : "d7de7fb3-756f-4265-8111-693b495e3232", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "String", 
+                "name" : "String", 
+                "uri" : "String", 
+                "metaType" : "PrimitiveType"
+            }
+        }, 
+        {
+            "fieldName" : "pubts", 
+            "fieldType" : null, 
+            "active" : null, 
+            "hide" : false, 
+            "key" : false, 
+            "nullable" : false, 
+            "length" : null, 
+            "maxValue" : null, 
+            "minValue" : null, 
+            "precise" : null, 
+            "refModelName" : null, 
+            "unionKey" : null, 
+            "isRoleA" : false, 
+            "isUnique" : false, 
+            "isSyncKey" : true, 
+            "dataPowerType" : null, 
+            "uri" : "devmodel-cn-mainsub-multiple.contract.Contract.pubts", 
+            "metaType" : "Property", 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "name" : "pubts", 
+            "displayName" : "时间戳", 
+            "version" : NumberInt(6), 
+            "creator" : null, 
+            "modifier" : null, 
+            "type" : "DateTime", 
+            "id" : "e01a59d9-42f2-42bf-bfd7-d0347fd2d809", 
+            "parentUri" : "ucfbase.entity.BizObject", 
+            "terms" : [
+
+            ], 
+            "modelType" : "EntityAttrModel", 
+            "dataType" : {
+                "id" : "Timestamp", 
+                "name" : "Timestamp", 
+                "uri" : "Timestamp", 
+                "metaType" : "PrimitiveType"
+            }
+        }
+    ], 
+    "modelType" : "EntityAttrModel", 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "createTime" : "2019-09-09 20:22:15:820", 
+    "modifyTime" : ISODate("2019-10-06T10:37:28.228+0000"), 
+    "terms" : [
+        {
+            "_id" : ObjectId("5bbb05856b2f070034359759"), 
+            "id" : "9dffcf39-8045-4aeb-a549-08f73738649a", 
+            "code" : "isCoding", 
+            "name" : "是否可编码", 
+            "description" : "", 
+            "targetType" : "PROPERTY", 
+            "categories" : [
+                {
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7", 
+                    "code" : "encodingRules", 
+                    "name" : "编码规则", 
+                    "description" : "", 
+                    "parentId" : "0", 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ], 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+                    "name" : "是否可编码"
+                }
+            }, 
+            "modifyTime" : "2019-03-23 14:54:49:166", 
+            "version" : NumberInt(27)
+        }, 
+        {
+            "_id" : ObjectId("5ccfa48ea82649004e7d4013"), 
+            "code" : "isBusinessLog", 
+            "name" : "支持业务日志", 
+            "description" : "", 
+            "targetType" : "CLASS", 
+            "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87", 
+            "categories" : [
+                {
+                    "code" : "logsManagement", 
+                    "modifyTime" : "2019-05-06 11:04:55:295", 
+                    "createTime" : "2019-05-06 11:04:55:295", 
+                    "name" : "日志管理", 
+                    "description" : "", 
+                    "_id" : ObjectId("5ccfa457a82649004e7d4012"), 
+                    "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e", 
+                    "parentId" : "0", 
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        }, 
+                        "en_US" : {
+
+                        }, 
+                        "zh_CN" : {
+                            "name" : "日志管理"
+                        }
+                    }
+                }
+            ], 
+            "mul_language" : {
+                "zh_TW" : {
+
+                }, 
+                "en_US" : {
+
+                }, 
+                "zh_CN" : {
+                    "name" : "支持业务日志"
+                }
+            }, 
+            "createTime" : "2019-05-06 11:05:50:876", 
+            "modifyTime" : "2019-05-06 11:06:25:958", 
+            "version" : NumberInt(1)
+        }
+    ], 
+    "general" : "d421b3fa-9bcd-4db2-b43b-fbc55db29ae7", 
+    "generalName" : "基类", 
+    "isOldData" : true
+}
+{
+    "_id" : ObjectId("5e53846112a2a2333ddb20a5"),
+    "displayName" : "津贴管理",
+    "name" : "allowance",
+    "tableName" : "iuap5_allowance",
+    "key" : "classid1",
+    "isnewaddclass" : true,
+    "ownedAttribute" : [
+        {
+            "displayName" : "编码",
+            "name" : "code",
+            "fieldName" : "code",
+            "id" : "90a0e32d-fce9-4564-b64a-97ce9c2cc5c2",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "_key" : "90a0e32d-fce9-4564-b64a-97ce9c2cc5c2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.code",
+            "createTime" : "2020-02-19 10:49:22:588",
+            "modifyTime" : "2020-02-19 10:49:22:588",
+            "terms" : [
+                {
+                    "_id" : ObjectId("5bbb05856b2f070034359759"),
+                    "id" : "9dffcf39-8045-4aeb-a549-08f73738649a",
+                    "code" : "isCoding",
+                    "name" : "是否可编码",
+                    "description" : "",
+                    "targetType" : "PROPERTY",
+                    "categories" : [
+                        {
+                            "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                            "code" : "encodingRules",
+                            "name" : "编码规则",
+                            "description" : "",
+                            "parentId" : "0",
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                },
+                                "en_US" : {
+
+                                },
+                                "zh_CN" : {
+                                    "name" : "编码规则"
+                                }
+                            }
+                        }
+                    ],
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "是否可编码"
+                        }
+                    },
+                    "modifyTime" : "2019-03-23 14:54:49:166",
+                    "version" : NumberInt(27)
+                },
+                {
+                    "_id" : ObjectId("5ccfa48ea82649004e7d4013"),
+                    "code" : "isBusinessLog",
+                    "name" : "支持业务日志",
+                    "description" : "",
+                    "targetType" : "CLASS",
+                    "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+                    "categories" : [
+                        {
+                            "code" : "logsManagement",
+                            "modifyTime" : "2019-05-06 11:04:55:295",
+                            "createTime" : "2019-05-06 11:04:55:295",
+                            "name" : "日志管理",
+                            "description" : "",
+                            "_id" : ObjectId("5ccfa457a82649004e7d4012"),
+                            "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e",
+                            "parentId" : "0",
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                },
+                                "en_US" : {
+
+                                },
+                                "zh_CN" : {
+                                    "name" : "日志管理"
+                                }
+                            }
+                        }
+                    ],
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "支持业务日志"
+                        }
+                    },
+                    "createTime" : "2019-05-06 11:05:50:876",
+                    "modifyTime" : "2019-05-06 11:06:25:958",
+                    "version" : NumberInt(1)
+                },
+                {
+                    "_id" : ObjectId("5cb436656158b6004e05ddb8"),
+                    "code" : "CODE",
+                    "name" : "编码",
+                    "description" : "",
+                    "id" : "a999b077-c35c-4dfb-8880-3411d5e8597b",
+                    "parentId" : "fd8ae8a6-0837-4117-bb68-8b3e7f281cb6",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码"
+                        }
+                    },
+                    "createTime" : "2019-04-15 15:44:37:696",
+                    "modifyTime" : "2019-04-15 15:37:43:623",
+                    "version" : NumberInt(2)
+                }
+            ],
+            "categoriesString" : "是否可编码,ID,支持业务日志"
+        },
+        {
+            "displayName" : "司龄",
+            "name" : "serviceYearsCompany",
+            "fieldName" : "serviceYearsCompany",
+            "id" : "71347fcb-5551-40dc-a811-5b44ff065ee5",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "_key" : "71347fcb-5551-40dc-a811-5b44ff065ee5",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.serviceYearsCompany",
+            "createTime" : "2020-02-19 10:49:22:948",
+            "modifyTime" : "2020-02-19 10:49:22:948"
+        },
+        {
+            "displayName" : "部门名称 ",
+            "name" : "dept_name",
+            "fieldName" : "dept_name",
+            "id" : "0b83cd55-e842-4b0f-acf3-e19280cebe7a",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "_key" : "0b83cd55-e842-4b0f-acf3-e19280cebe7a",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.dept_name",
+            "createTime" : "2020-02-19 10:49:23:158",
+            "modifyTime" : "2020-02-19 10:49:23:158"
+        },
+        {
+            "displayName" : "领取时间",
+            "name" : "pickTime",
+            "fieldName" : "pickTime",
+            "id" : "35dade6a-b499-4d2c-ac35-e002c2a004d7",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "_key" : "35dade6a-b499-4d2c-ac35-e002c2a004d7",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.pickTime",
+            "createTime" : "2020-02-19 10:49:23:384",
+            "modifyTime" : "2020-02-19 10:49:23:384"
+        },
+        {
+            "displayName" : "职级",
+            "name" : "postLevel",
+            "fieldName" : "postLevel",
+            "id" : "dd3398c9-9108-4bbb-9dce-0b44a5f8a902",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "_key" : "dd3398c9-9108-4bbb-9dce-0b44a5f8a902",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.postLevel",
+            "createTime" : "2020-02-19 10:49:23:530",
+            "modifyTime" : "2020-02-19 10:49:23:530"
+        },
+        {
+            "displayName" : "年份",
+            "name" : "year",
+            "fieldName" : "year",
+            "id" : "56d83f29-addd-48bd-8cac-b81e99c279c0",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.year",
+            "createTime" : "2020-02-20 20:55:54:908",
+            "modifyTime" : "2020-02-20 20:55:54:908",
+            "_key" : "56d83f29-addd-48bd-8cac-b81e99c279c0"
+        },
+        {
+            "displayName" : "性别",
+            "name" : "sex",
+            "fieldName" : "sex",
+            "id" : "be924dc2-0099-42f8-9ea2-da6f07835674",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.sex",
+            "createTime" : "2020-02-20 20:55:55:155",
+            "modifyTime" : "2020-02-20 20:55:55:155",
+            "_key" : "be924dc2-0099-42f8-9ea2-da6f07835674"
+        },
+        {
+            "displayName" : "补贴标准",
+            "name" : "allowanceStandard",
+            "fieldName" : "allowanceStandard",
+            "id" : "e274801f-1b60-4ea4-a81b-65a5278b6943",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.allowanceStandard",
+            "createTime" : "2020-02-20 20:55:55:393",
+            "modifyTime" : "2020-02-20 20:55:55:393",
+            "_key" : "e274801f-1b60-4ea4-a81b-65a5278b6943",
+            "terms" : [
+
+            ],
+            "categoriesString" : ""
+        },
+        {
+            "displayName" : "备注",
+            "name" : "remark",
+            "fieldName" : "remark",
+            "id" : "d61a0208-2e36-4cc7-a729-a152f220db60",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.remark",
+            "createTime" : "2020-02-21 10:06:10:531",
+            "modifyTime" : "2020-02-21 10:06:10:531",
+            "_key" : "d61a0208-2e36-4cc7-a729-a152f220db60",
+            "terms" : [
+
+            ],
+            "categoriesString" : ""
+        },
+        {
+            "displayName" : "职级",
+            "name" : "levelName",
+            "fieldName" : "levelName",
+            "id" : "141cd9d1-a5d1-4ff7-93d4-48118c39eb78",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.levelName",
+            "createTime" : "2020-02-21 10:06:10:738",
+            "modifyTime" : "2020-02-21 10:06:10:738",
+            "_key" : "141cd9d1-a5d1-4ff7-93d4-48118c39eb78"
+        },
+        {
+            "displayName" : "部门",
+            "name" : "dept",
+            "fieldName" : "dept",
+            "id" : "ce63093e-79e2-4306-a865-ff45fb44de44",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.dept",
+            "createTime" : "2020-02-21 10:06:10:937",
+            "modifyTime" : "2020-02-21 10:06:10:937",
+            "_key" : "ce63093e-79e2-4306-a865-ff45fb44de44"
+        },
+        {
+            "displayName" : "是否超标",
+            "name" : "exdeeds",
+            "fieldName" : "exdeeds",
+            "id" : "3fcf5251-011c-41ae-96df-50e1c4c9b368",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : "6",
+            "dataType" : {
+                "name" : "整数",
+                "id" : "Integer",
+                "metaType" : "PrimitiveType",
+                "length" : "6",
+                "uri" : "Integer"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.exdeeds",
+            "createTime" : "2020-02-21 10:06:11:145",
+            "modifyTime" : "2020-02-21 10:06:11:145",
+            "_key" : "3fcf5251-011c-41ae-96df-50e1c4c9b368"
+        },
+        {
+            "displayName" : "实际补贴",
+            "name" : "allowanceActual",
+            "fieldName" : "allowanceActual",
+            "id" : "e20fa703-807c-4603-9293-2df68b746189",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.allowanceActual",
+            "createTime" : "2020-02-21 10:06:11:358",
+            "modifyTime" : "2020-02-21 10:06:11:358",
+            "_key" : "e20fa703-807c-4603-9293-2df68b746189"
+        },
+        {
+            "displayName" : "是否超标名称",
+            "name" : "exdeedsEnumValue",
+            "fieldName" : "exdeedsEnumValue",
+            "id" : "3e133571-45ef-4c99-9f49-1ca20f00ee27",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.exdeedsEnumValue",
+            "createTime" : "2020-02-21 10:06:11:599",
+            "modifyTime" : "2020-02-21 10:06:11:599",
+            "_key" : "3e133571-45ef-4c99-9f49-1ca20f00ee27"
+        },
+        {
+            "displayName" : "补贴类型",
+            "name" : "allowanceType",
+            "fieldName" : "allowanceType",
+            "id" : "38ef2b4b-e1a6-4e34-802a-6f0091f1d985",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.allowanceType",
+            "createTime" : "2020-02-21 10:06:11:859",
+            "modifyTime" : "2020-02-21 10:06:11:859",
+            "_key" : "38ef2b4b-e1a6-4e34-802a-6f0091f1d985"
+        },
+        {
+            "displayName" : "补贴类型名称",
+            "name" : "allowanceTypeEnumValue",
+            "fieldName" : "allowanceTypeEnumValue",
+            "id" : "c5c50adb-3587-4554-aef7-13ee8dace7af",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.allowanceTypeEnumValue",
+            "createTime" : "2020-02-21 10:06:12:040",
+            "modifyTime" : "2020-02-21 10:06:12:040",
+            "_key" : "c5c50adb-3587-4554-aef7-13ee8dace7af"
+        },
+        {
+            "displayName" : "月份",
+            "name" : "month",
+            "fieldName" : "month",
+            "id" : "8c016f45-d287-4d8f-9f95-aa0e095bfb2a",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.month",
+            "createTime" : "2020-02-21 10:06:12:255",
+            "modifyTime" : "2020-02-21 10:06:12:255",
+            "_key" : "8c016f45-d287-4d8f-9f95-aa0e095bfb2a"
+        },
+        {
+            "displayName" : "月份",
+            "name" : "monthEnumValue",
+            "fieldName" : "monthEnumValue",
+            "id" : "c20505ea-5f30-450d-9cd6-48c5627c8d0c",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.monthEnumValue",
+            "createTime" : "2020-02-21 10:06:12:538",
+            "modifyTime" : "2020-02-21 10:06:12:538",
+            "_key" : "c20505ea-5f30-450d-9cd6-48c5627c8d0c"
+        },
+        {
+            "displayName" : "领取方式",
+            "name" : "pickType",
+            "fieldName" : "pickType",
+            "id" : "1f0a9c6a-fd78-4e9e-8c61-608a1fa9a5e7",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.pickType",
+            "createTime" : "2020-02-21 10:06:12:771",
+            "modifyTime" : "2020-02-21 10:06:12:771",
+            "_key" : "1f0a9c6a-fd78-4e9e-8c61-608a1fa9a5e7"
+        },
+        {
+            "displayName" : "领取方式名称",
+            "name" : "pickTypeEnumValue",
+            "fieldName" : "pickTypeEnumValue",
+            "id" : "de910de4-68ae-4e25-a5c7-a7e3e803140d",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.pickTypeEnumValue",
+            "createTime" : "2020-02-21 10:06:12:985",
+            "modifyTime" : "2020-02-21 10:06:12:985",
+            "_key" : "de910de4-68ae-4e25-a5c7-a7e3e803140d"
+        },
+        {
+            "displayName" : "员工姓名",
+            "name" : "name",
+            "fieldName" : "name",
+            "id" : "65208d5c-be2d-4d2e-b639-e032c0d4ceb5",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name",
+            "createTime" : "2020-02-21 10:06:13:193",
+            "modifyTime" : "2020-02-21 10:06:13:193",
+            "_key" : "65208d5c-be2d-4d2e-b639-e032c0d4ceb5",
+            "terms" : [
+                {
+                    "_id" : ObjectId("5cb436b26158b6004e05ddb9"),
+                    "code" : "NAME",
+                    "name" : "名称",
+                    "description" : "",
+                    "id" : "e28b37e1-737f-4833-9000-d41296daeca9",
+                    "parentId" : "fd8ae8a6-0837-4117-bb68-8b3e7f281cb6",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "名称"
+                        }
+                    },
+                    "createTime" : "2019-04-15 15:45:54:334",
+                    "modifyTime" : "2019-04-15 15:37:52:306",
+                    "version" : NumberInt(1),
+                    "refpk" : "e28b37e1-737f-4833-9000-d41296daeca9",
+                    "key" : "e28b37e1-737f-4833-9000-d41296daeca9",
+                    "refcode" : "NAME",
+                    "refname" : "名称",
+                    "memo" : ""
+                },
+                {
+                    "_id" : ObjectId("5ccfa48ea82649004e7d4013"),
+                    "code" : "isBusinessLog",
+                    "name" : "支持业务日志",
+                    "description" : "",
+                    "targetType" : "CLASS",
+                    "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+                    "categories" : [
+                        {
+                            "code" : "logsManagement",
+                            "modifyTime" : "2019-05-06 11:04:55:295",
+                            "createTime" : "2019-05-06 11:04:55:295",
+                            "name" : "日志管理",
+                            "description" : "",
+                            "_id" : ObjectId("5ccfa457a82649004e7d4012"),
+                            "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e",
+                            "parentId" : "0",
+                            "mul_language" : {
+                                "zh_TW" : {
+
+                                },
+                                "en_US" : {
+
+                                },
+                                "zh_CN" : {
+                                    "name" : "日志管理"
+                                }
+                            }
+                        }
+                    ],
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "支持业务日志"
+                        }
+                    },
+                    "createTime" : "2019-05-06 11:05:50:876",
+                    "modifyTime" : "2019-05-06 11:06:25:958",
+                    "version" : NumberInt(1),
+                    "refpk" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+                    "key" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+                    "refcode" : "isBusinessLog",
+                    "refname" : "支持业务日志",
+                    "memo" : ""
+                }
+            ],
+            "categoriesString" : "名称,支持业务日志"
+        },
+        {
+            "displayName" : "工龄",
+            "name" : "serviceYears",
+            "fieldName" : "serviceYears",
+            "id" : "f852092c-ff6a-4a00-b029-5b7b8d29c9cb",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.serviceYears",
+            "createTime" : "2020-02-21 10:06:13:482",
+            "modifyTime" : "2020-02-21 10:06:13:482",
+            "_key" : "f852092c-ff6a-4a00-b029-5b7b8d29c9cb"
+        },
+        {
+            "displayName" : "申请时间",
+            "name" : "applyTime",
+            "fieldName" : "applyTime",
+            "id" : "9314180a-c822-4a7d-9bbb-75eac064d688",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.applyTime",
+            "createTime" : "2020-02-21 10:06:13:813",
+            "modifyTime" : "2020-02-21 10:06:13:813",
+            "_key" : "9314180a-c822-4a7d-9bbb-75eac064d688"
+        },
+        {
+            "displayName" : "员工姓名2",
+            "name" : "name2",
+            "fieldName" : "name2",
+            "id" : "7bfad991-1be0-406f-b451-affd51236ab5",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name2",
+            "createTime" : "2020-02-21 10:06:14:028",
+            "modifyTime" : "2020-02-21 10:06:14:028",
+            "_key" : "7bfad991-1be0-406f-b451-affd51236ab5"
+        },
+        {
+            "displayName" : "员工姓名3",
+            "name" : "name3",
+            "fieldName" : "name3",
+            "id" : "68b4d857-9687-4ece-aea1-d76a84aef07c",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name3",
+            "createTime" : "2020-02-21 10:06:14:395",
+            "modifyTime" : "2020-02-21 10:06:14:395",
+            "_key" : "68b4d857-9687-4ece-aea1-d76a84aef07c"
+        },
+        {
+            "displayName" : "员工姓名4",
+            "name" : "name4",
+            "fieldName" : "name4",
+            "id" : "9ee9daa3-72f0-409c-bcca-fde5b38b7246",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name4",
+            "createTime" : "2020-02-21 10:06:15:497",
+            "modifyTime" : "2020-02-21 10:06:15:497",
+            "_key" : "9ee9daa3-72f0-409c-bcca-fde5b38b7246"
+        },
+        {
+            "displayName" : "员工姓名5",
+            "name" : "name5",
+            "fieldName" : "name5",
+            "id" : "44734ab2-8e3c-4e5f-9e51-8cc07d07fcf9",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name5",
+            "createTime" : "2020-02-21 10:06:16:519",
+            "modifyTime" : "2020-02-21 10:06:16:519",
+            "_key" : "44734ab2-8e3c-4e5f-9e51-8cc07d07fcf9"
+        },
+        {
+            "displayName" : "员工姓名6",
+            "name" : "name6",
+            "fieldName" : "name6",
+            "id" : "e7d09271-5e0a-4d3c-a057-4963fff8312b",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.name6",
+            "createTime" : "2020-02-21 10:06:17:506",
+            "modifyTime" : "2020-02-21 10:06:17:506",
+            "_key" : "e7d09271-5e0a-4d3c-a057-4963fff8312b"
+        },
+        {
+            "displayName" : "修改人",
+            "name" : "lastModifyUser",
+            "fieldName" : "lastModifyUser",
+            "id" : "ccd8dec4-2628-427a-8842-617b7b2e0939",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.lastModifyUser",
+            "createTime" : "2020-02-21 10:06:19:041",
+            "modifyTime" : "2020-02-21 10:06:19:041",
+            "_key" : "ccd8dec4-2628-427a-8842-617b7b2e0939"
+        },
+        {
+            "displayName" : "修改人名称",
+            "name" : "lastModifyUserName",
+            "fieldName" : "lastModifyUserName",
+            "id" : "0fd2b341-2fb5-4826-ae51-4ba054dbae69",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.lastModifyUserName",
+            "createTime" : "2020-02-21 10:06:19:756",
+            "modifyTime" : "2020-02-21 10:06:19:756",
+            "_key" : "0fd2b341-2fb5-4826-ae51-4ba054dbae69"
+        },
+        {
+            "displayName" : "修改时间",
+            "name" : "lastModified",
+            "fieldName" : "lastModified",
+            "id" : "0069b2bb-6bb4-4714-a73b-2ffd911be569",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.lastModified",
+            "createTime" : "2020-02-21 10:06:19:994",
+            "modifyTime" : "2020-02-21 10:06:19:994",
+            "_key" : "0069b2bb-6bb4-4714-a73b-2ffd911be569"
+        },
+        {
+            "displayName" : "创建人",
+            "name" : "createUser",
+            "fieldName" : "createUser",
+            "id" : "e5321320-ffc3-4454-be05-01215fd083e4",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.createUser",
+            "createTime" : "2020-02-21 10:06:20:211",
+            "modifyTime" : "2020-02-21 10:06:20:211",
+            "_key" : "e5321320-ffc3-4454-be05-01215fd083e4"
+        },
+        {
+            "displayName" : "创建人名称",
+            "name" : "createUserName",
+            "fieldName" : "createUserName",
+            "id" : "082dc830-bf29-42b0-8b7f-99882954ed9d",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.createUserName",
+            "createTime" : "2020-02-21 10:06:20:501",
+            "modifyTime" : "2020-02-21 10:06:20:501",
+            "_key" : "082dc830-bf29-42b0-8b7f-99882954ed9d"
+        },
+        {
+            "displayName" : "创建时间",
+            "name" : "createTime",
+            "fieldName" : "createTime",
+            "id" : "1a302dad-137e-4889-a9c1-b21b3acf3ef9",
+            "isNewDataName" : false,
+            "isNewDataCode" : false,
+            "nullable" : "true",
+            "length" : NumberInt(256),
+            "dataType" : {
+                "name" : "字符型",
+                "id" : "String",
+                "metaType" : "PrimitiveType",
+                "uri" : "String"
+            },
+            "precise" : "2",
+            "tenantId" : "sys",
+            "metadataLevel" : "0",
+            "modelType" : "EntityAttrModel",
+            "metaType" : "Property",
+            "version" : NumberInt(0),
+            "uri" : "iuap5-demo.allowances.allowance.createTime",
+            "createTime" : "2020-02-21 10:06:20:724",
+            "modifyTime" : "2020-02-21 10:06:20:724",
+            "_key" : "1a302dad-137e-4889-a9c1-b21b3acf3ef9"
+        }
+    ],
+    "id" : "913c59f2-1e5a-46f0-a5dc-08b725db3b7b",
+    "marginX" : "-350",
+    "marginY" : "320",
+    "general" : "d421b3fa-9bcd-4db2-b43b-fbc55db29ae7",
+    "generalName" : "基类",
+    "generalUri" : "base.entity.BizObject",
+    "modelType" : "EntityAttrModel",
+    "metaType" : "Class",
+    "version" : NumberInt(55),
+    "tenantId" : "sys",
+    "metadataLevel" : "0",
+    "metaComponentId" : "83e2b48f-297c-4a84-8aee-c58d7c80dd09",
+    "uri" : "iuap5-demo.allowances.allowance",
+    "createTime" : ISODate("2020-02-24T08:08:01.621+0000"),
+    "modifyTime" : ISODate("2020-02-24T08:08:01.621+0000"),
+    "terms" : [
+        {
+            "_id" : ObjectId("5bbb05856b2f070034359759"),
+            "id" : "9dffcf39-8045-4aeb-a549-08f73738649a",
+            "code" : "isCoding",
+            "name" : "是否可编码",
+            "description" : "",
+            "targetType" : "PROPERTY",
+            "categories" : [
+                {
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                    "code" : "encodingRules",
+                    "name" : "编码规则",
+                    "description" : "",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "是否可编码"
+                }
+            },
+            "modifyTime" : "2019-03-23 14:54:49:166",
+            "version" : NumberInt(27)
+        },
+        {
+            "_id" : ObjectId("5ccfa48ea82649004e7d4013"),
+            "code" : "isBusinessLog",
+            "name" : "支持业务日志",
+            "description" : "",
+            "targetType" : "CLASS",
+            "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+            "categories" : [
+                {
+                    "code" : "logsManagement",
+                    "modifyTime" : "2019-05-06 11:04:55:295",
+                    "createTime" : "2019-05-06 11:04:55:295",
+                    "name" : "日志管理",
+                    "description" : "",
+                    "_id" : ObjectId("5ccfa457a82649004e7d4012"),
+                    "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "日志管理"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "支持业务日志"
+                }
+            },
+            "createTime" : "2019-05-06 11:05:50:876",
+            "modifyTime" : "2019-05-06 11:06:25:958",
+            "version" : NumberInt(1)
+        }
+    ],
+    "isOldData" : true
+}

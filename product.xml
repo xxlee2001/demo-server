@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product>
+    <environment>
+
+        <environmentGroup>
+            <groupName>日志级别配置</groupName>
+            <groupCode>log</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>日志级别</name>
+                    <key>level</key>
+                    <defaultValue>ERROR</defaultValue>
+                    <inputType>select</inputType>
+                    <inputOptions>
+                        <option label="ALL" value="ALL" />
+                        <option label="TRACE" value="TRACE" />
+                        <option label="DEBUG" value="DEBUG" />
+                        <option label="INFO" value="INFO" />
+                        <option label="WARN" value="WARN" />
+                        <option label="ERROR" value="ERROR" />
+                        <option label="FATAL" value="FATAL" />
+                        <option label="OFF" value="OFF" />
+                    </inputOptions>
+                    <editable>true</editable>
+                    <required>true</required>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <!-- 环境变量组名，必填 -->
+            <groupName>工作台配置项</groupName>
+            <!-- 环境变量组code，必填 -->
+            <groupCode>diwork</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>域名</name>
+                    <!--环境变量key，必填-->
+                    <key>domain</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <inputType>input</inputType>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>域名配置</groupName>
+            <groupCode>website</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>访问协议</name>
+                    <key>protocol</key>
+                    <defaultValue>http</defaultValue>
+                    <inputType>select</inputType>
+                    <inputOptions>
+                        <option label="http" value="http" />
+                        <option label="https" value="https" />
+                    </inputOptions>
+                    <editable>true</editable>
+                    <required>true</required>
+                </environmentItem>
+                <environmentItem>
+                    <name>webpush协议</name>
+                    <key>websocket</key>
+                    <defaultValue>ws</defaultValue>
+                    <inputType>select</inputType>
+                    <inputOptions>
+                        <option label="ws" value="ws" />
+                        <option label="wss" value="wss" />
+                    </inputOptions>
+                    <editable>true</editable>
+                    <required>true</required>
+                </environmentItem>
+                <environmentItem>
+                    <name>域名或主机</name>
+                    <key>domain</key>
+                    <editable>true</editable>
+                    <required>true</required>
+                    <property>{{#nginx.port.equals('80')?#nginx.ip:#nginx.ip.concat(':').concat(#nginx.port)}}</property>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <!-- 环境变量组名，必填 -->
+            <groupName>其他</groupName>
+            <!-- 环境变量组code，必填 -->
+            <groupCode>other</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>微服务运行环境</name>
+                    <!--环境变量key，必填-->
+                    <key>mwProfile</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>premise-dev</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>流程中心url(带协议)</name>
+                    <!--环境变量key，必填-->
+                    <key>bpm</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${diwork.domain}</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>审批中心url(带协议)</name>
+                    <!--环境变量key，必填-->
+                    <key>approve</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${diwork.domain}</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>流程单据详情页url</name>
+                    <!--环境变量key，必填-->
+                    <key>bpmUrl</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${website.domain}/iuap5-sample-code-purchase/ucf-publish/purchase/#/detail?btnFlag=2&amp;id=</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>审批中心回调url</name>
+                    <!--环境变量key，必填-->
+                    <key>approveCallbackUrl</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${website.domain}/iuap5-sample-code-skip/ucf-publish/skip/</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>元数据域名</name>
+                    <!--环境变量key，必填-->
+                    <key>metadata</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${diwork.domain}</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>鉴权中心域名</name>
+                    <!--环境变量key，必填-->
+                    <key>access</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${diwork.domain}</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>accessKey</name>
+                    <!--环境变量key，必填-->
+                    <key>accessKey</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>false</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>fuaJUwsE69mccrCl</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>accessSecret</name>
+                    <!--环境变量key，必填-->
+                    <key>accessSecret</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>false</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>evQeAcSH8jm2UysqVNbsNvDEG4a0C8</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>打印服务url(带协议)</name>
+                    <!--环境变量key，必填-->
+                    <key>print</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${diwork.domain}</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>附件服务url(带协议)</name>
+                    <!--环境变量key，必填-->
+                    <key>attchmentdomain</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                </environmentItem>
+
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>消息推送节点地址</name>
+                    <!--环境变量key，必填-->
+                    <key>inotify_push_server</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${website.domain}/inotify-server/inotify</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>消息推送管理地址</name>
+                    <!--环境变量key，必填-->
+                    <key>inotify_pusher</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <defaultValue>${website.domain}/inotify-manager/</defaultValue>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <!-- 环境变量组名，必填 -->
+            <groupName>前端上下文</groupName>
+            <!-- 环境变量组code，必填 -->
+            <groupCode>ctx</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>一主多子上下文</name>
+                    <!--环境变量key，必填-->
+                    <key>main</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <inputType>input</inputType>
+                    <defaultValue>/demo-server</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>参照上下文</name>
+                    <!--环境变量key，必填-->
+                    <key>mdf</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <inputType>input</inputType>
+                    <defaultValue>/u8c-baseservice</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <!--环境变量名称，必填-->
+                    <name>bpm公共服务上下文</name>
+                    <!--环境变量key，必填-->
+                    <key>skip</key>
+                    <!--是否可编辑,非必填，默认值true-->
+                    <editable>true</editable>
+                    <!--环境变量是否必须，非必填，默认为false-->
+                    <required>true</required>
+                    <inputType>input</inputType>
+                    <defaultValue>/bpm-common-server</defaultValue>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>多schema定义</groupName>
+            <groupCode>schames</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>系统工作台</name>
+                    <key>workbench_system</key>
+                    <defaultValue>workbench_system</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+                <environmentItem>
+                    <name>工作台</name>
+                    <key>workbench</key>
+                    <defaultValue>workbench</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+                <environmentItem>
+                    <name>基础档案</name>
+                    <key>iuap_cloud_basedoc</key>
+                    <defaultValue>iuap_cloud_basedoc</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+                <environmentItem>
+                    <name>公共服务</name>
+                    <key>baseservice</key>
+                    <defaultValue>baseservice</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+                <environmentItem>
+                    <name>支撑服务</name>
+                    <key>iuap_support</key>
+                    <defaultValue>iuap_support</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+                <environmentItem>
+                    <name>打印</name>
+                    <key>u8cprint</key>
+                    <defaultValue>u8cprint</defaultValue>
+                    <editable>true</editable>
+                    <inputOptions/>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>Redis(mdd)</groupName>
+            <groupCode>redis</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>密码</name>
+                    <key>password</key>
+                    <editable>true</editable>
+                    <required>true</required>
+                    <property>redis.password</property>
+                </environmentItem>
+                <environmentItem>
+                    <name>IP:PORT序列(,号分隔)</name>
+                    <key>nodesStr</key>
+                    <editable>true</editable>
+                    <required>true</required>
+                    <property>redis.nodesStr</property>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>demo数据库(mdd)</groupName>
+            <groupCode>msdb</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>测试数据库名</name>
+                    <key>demodb</key>
+                    <defaultValue>iuap-ucf-demo</defaultValue>
+                    <editable>true</editable>
+                    <required>true</required>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>业务中台(mdd)</groupName>
+            <groupCode>busmid</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>业务中台地址</name>
+                    <key>base_url</key>
+                    <required>true</required>
+                    <defaultValue>http://172.20.57.192</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>业务中台推送</name>
+                    <key>base_ip</key>
+                    <required>true</required>
+                    <defaultValue>172.20.57.192</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>业务中台zookeeper</name>
+                    <key>zookeeper_url</key>
+                    <required>true</required>
+                    <defaultValue>172.20.57.192:2181</defaultValue>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>密钥对(mdd)</groupName>
+            <groupCode>accesskey</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>秘钥key</name>
+                    <key>access_key</key>
+                    <required>true</required>
+                    <defaultValue>fuaJUwsE69mccrCl</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>秘钥secret</name>
+                    <key>access_secret</key>
+                    <required>true</required>
+                    <defaultValue>evQeAcSH8jm2UysqVNbsNvDEG4a0C8</defaultValue>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+        <environmentGroup>
+            <groupName>外部依赖配置(mdd)</groupName>
+            <groupCode>extconf</groupCode>
+            <environmentItems>
+                <environmentItem>
+                    <name>部署环境</name>
+                    <key>rpcenv</key>
+                    <required>true</required>
+                    <defaultValue>premise-dev</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>j2v8调试器</name>
+                    <key>j2v8debuger</key>
+                    <required>true</required>
+                    <defaultValue>http://172.20.47.7:25000</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>开发平台地址</name>
+                    <key>devplaturl</key>
+                    <required>true</required>
+                    <defaultValue>http://172.20.47.7</defaultValue>
+                </environmentItem>
+                <environmentItem>
+                    <name>动态数据源开启</name>
+                    <key>dynamicDataSource</key>
+                    <required>true</required>
+                    <defaultValue>false</defaultValue>
+                </environmentItem>
+            </environmentItems>
+        </environmentGroup>
+
+    </environment>
+
+    <!--环境变量转换器,同通过js表达式转换为新的key,非必填 -->
+    <environmentConverters>
+        <!--工作台域名-->
+        <converter key="pom.diwork.domain" value="${website.protocol}://${diwork.domain}" />
+        <!--微服务运行环境-->
+        <converter key="pom.profile.active" value="${other.mwProfile}" />
+        <!--注册中心域名-->
+        <converter key="pom.registry.url" value="${website.protocol}://${registry.nodesStr}" />
+        <!--流程中心url-->
+        <converter key="pom.bpm.domain" value="${other.bpm}" />
+        <!--审批中心url-->
+        <converter key="pom.approve.domain" value="${other.approve}" />
+        <!--单据详情页地址-->
+        <converter key="pom.bpm.detail.url" value="${website.protocol}://${other.bpmUrl}" />
+        <!--审批中心回调地址-->
+        <converter key="pom.approveCallbackUrl.url" value="${website.protocol}://${other.approveCallbackUrl}" />
+        <!--元数据域名-->
+        <converter key="pom.metadata.domain" value="${website.protocol}://${other.metadata}" />
+        <!--鉴权中心域名-->
+        <converter key="pom.access.domain" value="${website.protocol}://${other.access}" />
+        <!--accesskey-->
+        <converter key="pom.access.key" value="${other.accessKey}" />
+        <!--accessSecrect-->
+        <converter key="pom.access.secret" value="${other.accessSecret}" />
+        <!--打印服务url-->
+        <converter key="pom.print.domain" value="${other.print}" />
+        <!--推送-->
+        <converter key="pom.inotify_pusher" value="${website.protocol}://${other.inotify_pusher}"/>
+        <converter key="pom.inotify_push_server"
+                   value="${website.websocket}://${other.inotify_push_server}"/>
+
+        <!--前端使用-->
+        <converter key="pom.fe.print.domain" value="${other.print}" />
+        <!--前端使用：一主多子上下文-->
+        <converter key="pom.fe.main.ctx" value="${ctx.main}" />
+        <!--前端使用：参照上下文-->
+        <converter key="pom.fe.mdf.ctx" value="${ctx.mdf}" />
+        <!--前端使用：附件-->
+        <converter key="pom.fe.attchment.domain" value="${other.attchmentdomain}" />
+        <!--前端使用：流程-->
+        <converter key="pom.fe.ys.domain" value="${other.bpm}" />
+        <!--前端使用：bpm公共服务-->
+        <converter key="pom.fe.skip.ctx" value="${ctx.skip}" />
+
+
+        <!-- nginx -->
+        <converter key="http_schema" value="http"/>
+        <converter key="http_url" value="${http_schema}://${nginx.ip}:${nginx.port}"/>
+        <converter key="http_ip" value="${nginx.ip}:${nginx.port}"/>
+        <converter key="host_ip" value="${nginx.ip}"/>
+        <converter key="http_port" value="${nginx.port}"/>
+
+        <!-- mysql -->
+        <converter key="mysql_ip" value="#['${db-init.nodesStr}'.split(',')[0].split(':')[0]]#"/>
+        <converter key="mysql_port" value="#['${db-init.nodesStr}'.split(',')[0].split(':')[1]]#"/>
+        <converter key="mysql_dbname" value="${db-init.dbname}"/>
+        <converter key="mysql_username" value="${db-init.user}"/>
+        <converter key="mysql_password" value="${db-init.password}"/>
+
+        <!-- redis -->
+        <converter key="redis_ip" value="#['${redis.nodesStr}'.split(',')[0].split(':')[0]]#"/>
+        <converter key="redis_port" value="#['${redis.nodesStr}'.split(',')[0].split(':')[1]]#"/>
+        <converter key="redis_password" value="${redis.password}"/>
+        <!-- zookeeper -->
+        <converter key="zookeeper_ip" value="#['${zookeeper.nodesStr}'.split(',')[0].split(':')[0]]#"/>
+        <converter key="zookeeper_port" value="#['${zookeeper.nodesStr}'.split(',')[0].split(':')[1]]#"/>
+        <converter key="zookeeper_url" value="${zookeeper_ip}:${zookeeper_port}"/>
+    </environmentConverters>
+</product>

@@ -1,0 +1,337 @@
+{ 
+    "_id" : ObjectId("5d39a5e4461ba00060f9adf3"), 
+    "ownModule" : "devmodel-cn-mainsub-multiple", 
+    "domain" : "devmodel-cn-mainsub-multiple", 
+    "uri" : "devmodel-cn-mainsub-multiple.contract", 
+    "metaType" : "Component", 
+    "displayName" : "cn编程模型一主多子示例", 
+    "name" : "contract", 
+    "description" : null, 
+    "status" : "0", 
+    "modelType" : "EntityAttrModel", 
+    "version" : NumberInt(61), 
+    "id" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "parentUri" : null, 
+    "createTime" : "2019-07-25 20:53:00:636", 
+    "modifyTime" : ISODate("2019-10-06T10:37:29.641+0000"), 
+    "appId" : "CNPF",
+    "appName" : "开发平台测试", 
+    "metaModelClassId" : "8f7ad435-3326-4ad0-9819-de187381fae5", 
+    "mul_language" : {
+        "zh_CN" : {
+
+        }, 
+        "en_US" : {
+
+        }, 
+        "zh_TW" : {
+
+        }
+    }, 
+    "parentdataid" : ""
+}
+{
+    "_id" : ObjectId("5e4f509512a2a2333ddb205d"),
+    "domain" : "iuap5-demo",
+    "ownModule" : "iuap5-demo",
+    "metaModelClassId" : "8f7ad435-3326-4ad0-9819-de187381fae5",
+    "name" : "allowances",
+    "displayName" : "津贴管理",
+    "mul_language" : {
+        "zh_CN" : {
+
+        },
+        "en_US" : {
+
+        },
+        "zh_TW" : {
+
+        }
+    },
+    "appId" : "CNPF",
+    "appName" : "",
+    "id" : "83e2b48f-297c-4a84-8aee-c58d7c80dd09",
+    "modelType" : "EntityAttrModel",
+    "metaType" : "Component",
+    "version" : NumberInt(75),
+    "tenantId" : "sys",
+    "metadataLevel" : "0",
+    "moduleName" : "iuap5-demo",
+    "uri" : "iuap5-demo.allowances",
+    "createTime" : "2020-02-21 11:37:57:911",
+    "modifyTime" : ISODate("2020-02-24T08:07:56.067+0000"),
+    "parentdataid" : "",
+    "terms" : [
+        {
+            "_id" : ObjectId("5bbb0043d6018000320326ce"),
+            "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+            "code" : "encodingRules",
+            "name" : "编码规则",
+            "description" : "",
+            "parentId" : "0",
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "编码规则"
+                }
+            }
+        },
+        {
+            "_id" : ObjectId("5d248f3b03ff9c0060a9d3c9"),
+            "code" : "isOrg",
+            "name" : "是否组织类参照",
+            "description" : "",
+            "targetType" : "CLASS",
+            "id" : "76401269-e3a2-4ddc-bce1-cb28f7e9ef56",
+            "categories" : [
+                {
+                    "code" : "encodingRules",
+                    "name" : "编码规则",
+                    "description" : "",
+                    "_id" : ObjectId("5bbb0043d6018000320326ce"),
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "是否组织类参照"
+                }
+            },
+            "createTime" : "2019-07-09 20:57:31:724",
+            "modifyTime" : "2019-07-09 21:03:28:590",
+            "version" : NumberInt(1)
+        },
+        {
+            "_id" : ObjectId("5cf7306265cadc004d49e702"),
+            "code" : "isMapping",
+            "name" : "是否可映射",
+            "description" : "",
+            "targetType" : "PROPERTY",
+            "id" : "f7d5dff5-73ab-4899-aed3-209a4774a4fe",
+            "categories" : [
+                {
+                    "code" : "encodingRules",
+                    "name" : "编码规则",
+                    "description" : "",
+                    "_id" : ObjectId("5bbb0043d6018000320326ce"),
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "是否可映射"
+                }
+            },
+            "createTime" : "2019-06-05 11:00:50:417",
+            "modifyTime" : "2019-06-05 11:00:59:777",
+            "version" : NumberInt(1)
+        },
+        {
+            "_id" : ObjectId("5bbb05856b2f070034359759"),
+            "id" : "9dffcf39-8045-4aeb-a549-08f73738649a",
+            "code" : "isCoding",
+            "name" : "是否可编码",
+            "description" : "",
+            "targetType" : "PROPERTY",
+            "categories" : [
+                {
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                    "code" : "encodingRules",
+                    "name" : "编码规则",
+                    "description" : "",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "是否可编码"
+                }
+            },
+            "modifyTime" : "2019-03-23 14:54:49:166",
+            "version" : NumberInt(27)
+        },
+        {
+            "_id" : ObjectId("5c3d4f671600e4005ab176c4"),
+            "id" : "e1630b10-9262-4217-be89-a8c6cfbdc8f4",
+            "code" : "export",
+            "name" : "导出",
+            "description" : "",
+            "targetType" : "PROPERTY",
+            "categories" : [
+                {
+                    "code" : "defdoc",
+                    "name" : "自定义档案",
+                    "description" : "自定义档案",
+                    "_id" : ObjectId("5bac2ddacff47e00079c4681"),
+                    "id" : "2cc4a397-75e2-40d0-a377-5e5f5e94208c",
+                    "parentId" : "1ef08bb9-cfb9-4b20-8df8-087b131fa379",
+                    "mul_language" : {
+                        "zh_TW" : {
+                            "name" : "自定義檔案"
+                        },
+                        "en_US" : {
+                            "name" : "Custom File"
+                        },
+                        "zh_CN" : {
+                            "name" : "自定义档案"
+                        }
+                    }
+                },
+                {
+                    "code" : "ticket_02",
+                    "name" : "工单FAQ",
+                    "description" : "工单FAQ",
+                    "_id" : ObjectId("5bac2e7acff47e00079c4686"),
+                    "id" : "c6e4e1b7-09c6-474c-b977-f85255b3b542",
+                    "parentId" : "8adce6cd-1918-4277-b852-1ba185336890",
+                    "mul_language" : {
+                        "zh_TW" : {
+                            "name" : "工單FAQ"
+                        },
+                        "en_US" : {
+                            "name" : "Work Order FAQ"
+                        },
+                        "zh_CN" : {
+                            "name" : "工单FAQ"
+                        }
+                    }
+                },
+                {
+                    "code" : "encodingRules",
+                    "name" : "编码规则",
+                    "description" : "",
+                    "_id" : ObjectId("5bbb0043d6018000320326ce"),
+                    "id" : "d0c2898f-2207-446c-a6e5-cbba57cd7cb7",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "编码规则"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "导出"
+                }
+            },
+            "modifyTime" : "2019-03-23 14:54:49:067",
+            "version" : NumberInt(29)
+        },
+        {
+            "_id" : ObjectId("5ccfa48ea82649004e7d4013"),
+            "code" : "isBusinessLog",
+            "name" : "支持业务日志",
+            "description" : "",
+            "targetType" : "CLASS",
+            "id" : "7a2744a6-1387-4101-af45-bcc9cfa4dc87",
+            "categories" : [
+                {
+                    "code" : "logsManagement",
+                    "modifyTime" : "2019-05-06 11:04:55:295",
+                    "createTime" : "2019-05-06 11:04:55:295",
+                    "name" : "日志管理",
+                    "description" : "",
+                    "_id" : ObjectId("5ccfa457a82649004e7d4012"),
+                    "id" : "3f4c4f7e-2db8-478f-b1e9-e6d9f195998e",
+                    "parentId" : "0",
+                    "mul_language" : {
+                        "zh_TW" : {
+
+                        },
+                        "en_US" : {
+
+                        },
+                        "zh_CN" : {
+                            "name" : "日志管理"
+                        }
+                    }
+                }
+            ],
+            "mul_language" : {
+                "zh_TW" : {
+
+                },
+                "en_US" : {
+
+                },
+                "zh_CN" : {
+                    "name" : "支持业务日志"
+                }
+            },
+            "createTime" : "2019-05-06 11:05:50:876",
+            "modifyTime" : "2019-05-06 11:06:25:958",
+            "version" : NumberInt(1)
+        }
+    ]
+}

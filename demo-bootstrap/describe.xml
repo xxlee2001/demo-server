@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <name>demo-server</name>
+    <code>demo-server</code>
+    <dbScripts>
+        <dbScript>
+            <name>mysql</name>
+            <code>mysql</code>
+            <type>init</type>
+            <dbType>mysql</dbType>
+            <defaultScript>true</defaultScript>
+            <ddl>mysql/init/ddl.sql</ddl>
+            <!--<dml>mysql/init/dml_iuap_cloud_basedoc.sql{{#schames.iuap_cloud_basedoc}},mysql/init/dml_baseservice.sql{{#schames.baseservice}},mysql/init/dml_u8c_billcode.sql{{#schames.iuap_support}},mysql/init/dml_dispath.sql{{#schames.iuap_support}}|RP,mysql/init/dml_message.sql{{#schames.iuap_support}},mysql/init/dml_prewarning.sql{{#schames.iuap_support}}|RP,mysql/init/dml_u8cprint.sql{{#schames.u8cprint}},mysql/init/dml_workbench.sql{{#schames.workbench}},mysql/init/dml_workbench_system.sql{{#schames.workbench_system}}|RP</dml>-->
+            <dml>mysql/init/dml.sql,mysql/init/dml_baseservice.sql{{#schames.baseservice}},mysql/init/dml_workbench.sql{{#schames.workbench}},mysql/init/dml_workbench_system.sql{{#schames.workbench_system}}|RP,mysql/init/dml_iuap_cloud_basedoc.sql{{#schames.iuap_cloud_basedoc}},mysql/init/dml_u8c_billcode.sql{{#schames.iuap_support}},mysql/init/dml_u8cprint.sql{{#schames.u8cprint}}</dml>
+        </dbScript>
+    </dbScripts>
+
+    <!-- 如果没有configUrls，默认将源码下的src/main/resources中的*.properties复制到产品盘的config/WEB-INF/classes下 -->
+    <configUrls>
+        <configUrl>
+            <source>src/main/resources/application.properties</source>
+        </configUrl>
+        <configUrl>
+            <source>src/main/resources/logback.xml</source>
+        </configUrl>
+    </configUrls>
+</project>

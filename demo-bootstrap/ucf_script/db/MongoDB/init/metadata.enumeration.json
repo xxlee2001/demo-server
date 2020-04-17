@@ -1,0 +1,329 @@
+{ 
+    "_id" : ObjectId("5d4401b99938260071a78449"), 
+    "metaPackage" : null, 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "ownedLiteral" : [
+        {
+            "name" : "物资", 
+            "code" : "1", 
+            "id" : "id0", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+                "zh_TW" : {
+                    "name" : "物資"
+                }, 
+                "en_US" : {
+                    "name" : "material"
+                }, 
+                "zh_CN" : {
+                    "name" : "物资"
+                }
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "工程", 
+            "code" : "2", 
+            "id" : "id1", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "其他服务", 
+            "code" : "3", 
+            "id" : "id2", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }
+    ], 
+    "displayName" : null, 
+    "name" : null, 
+    "id" : "3bbb0475-6840-485a-a1d9-454fd58bd78c", 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.null", 
+    "metaType" : "Enumeration", 
+    "stereotypes" : null, 
+    "terms" : null, 
+    "description" : "", 
+    "metadataLevel" : "0", 
+    "status" : "1", 
+    "tenantId" : null, 
+    "mul_language" : null, 
+    "version" : NumberInt(41), 
+    "createTime" : null, 
+    "creator" : null, 
+    "modifier" : null, 
+    "modifyTime" : ISODate("2019-10-06T10:37:29.056+0000")
+}
+{ 
+    "_id" : ObjectId("5d44020c9938260071a7844d"), 
+    "metaPackage" : null, 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "ownedLiteral" : [
+        {
+            "name" : "已保存", 
+            "code" : "1", 
+            "id" : "id1", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "审批中", 
+            "code" : "3", 
+            "id" : "id3", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(32), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "审批中", 
+            "code" : "3", 
+            "id" : "id3", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(28), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "审批通过", 
+            "code" : "4", 
+            "id" : "id4", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "审批不通过", 
+            "code" : "5", 
+            "id" : "id5", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "已驳回", 
+            "code" : "12", 
+            "id" : "12", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "终止", 
+            "code" : "13", 
+            "id" : "id13", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "已撤回", 
+            "code" : "14", 
+            "id" : "id14", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "未处理", 
+            "code" : "98", 
+            "id" : "id98", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }, 
+        {
+            "name" : "已超期", 
+            "code" : "99", 
+            "id" : "id99", 
+            "uri" : null, 
+            "metaType" : null, 
+            "stereotypes" : null, 
+            "terms" : null, 
+            "description" : null, 
+            "metadataLevel" : null, 
+            "status" : "0", 
+            "tenantId" : null, 
+            "mul_language" : {
+
+            }, 
+            "version" : NumberInt(30), 
+            "createTime" : null, 
+            "creator" : null, 
+            "modifier" : null, 
+            "modifyTime" : null
+        }
+    ], 
+    "displayName" : null, 
+    "name" : "合同状态", 
+    "id" : "49bd01d2-5167-4a67-b0fe-377e9b74c2ae", 
+    "uri" : "合同状态", 
+    "metaType" : "Enumeration", 
+    "stereotypes" : null, 
+    "terms" : null, 
+    "description" : "", 
+    "metadataLevel" : "0", 
+    "status" : "1", 
+    "tenantId" : null, 
+    "mul_language" : null, 
+    "version" : NumberInt(50), 
+    "createTime" : null, 
+    "creator" : null, 
+    "modifier" : null, 
+    "modifyTime" : ISODate("2019-10-06T10:37:29.367+0000")
+}

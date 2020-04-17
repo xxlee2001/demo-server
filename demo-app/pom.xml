@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.yonyou.iuap.demo.cn</groupId>
+    <artifactId>demo-server</artifactId>
+    <version>5.0.0-RELEASE</version>
+  </parent>
+  <artifactId>demo-app</artifactId>
+  <dependencies>
+    <dependency>
+      <groupId>com.yonyou.iuap.demo.cn</groupId>
+      <artifactId>demo-domain</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <!--use diwork functional authority -->
+    <dependency>
+      <groupId>com.yonyou.diwork</groupId>
+      <artifactId>diwork-sdk</artifactId>
+    </dependency>
+    <!-- mirco service client -->
+    <dependency>
+      <groupId>com.yonyou.cloud.middleware</groupId>
+      <artifactId>mwclient</artifactId>
+      <type>pom</type>
+    </dependency>
+    <!-- org-staff -->
+    <dependency>
+      <groupId>com.yonyou.iuap</groupId>
+      <artifactId>iuap-bd-sdk</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yonyou.iuap</groupId>
+      <artifactId>iuap-org-api</artifactId>
+    </dependency>
+    <dependency>
+    <groupId>com.yonyou.diwork</groupId>
+    <artifactId>diwork-pub-auth</artifactId>
+  </dependency>
+<!--    <dependency>
+    	<groupId>junit</groupId>
+    	<artifactId>junit</artifactId>
+    	<scope>test</scope>
+    </dependency>-->
+    <dependency>
+    	<groupId>com.yonyou.iuap</groupId>
+    	<artifactId>ucf-baseservice-support</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.yonyou.iuap</groupId>
+      <artifactId>iuap.print.client</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-log4j12</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+</project>

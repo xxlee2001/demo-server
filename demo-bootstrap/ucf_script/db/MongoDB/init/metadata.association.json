@@ -1,0 +1,117 @@
+{ 
+    "_id" : {
+        "timestamp" : NumberInt(1564059108), 
+        "machineIdentifier" : NumberInt(4594592), 
+        "processIdentifier" : NumberInt(96), 
+        "counter" : NumberInt(16363006)
+    }, 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "ownedEnd" : [
+        {
+            "referencedClass" : "372410b0-3f7b-437f-bfaa-34c19c395229", 
+            "referencedAttribute" : "contractTerms", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "b7c56725-8d14-4fc6-835b-2cb7036b3522"
+        }, 
+        {
+            "referencedClass" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "referencedAttribute" : "contract", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "a3fc2487-82b3-46b0-ab5e-0540650ec37b"
+        }
+    ], 
+    "status" : "0", 
+    "version" : NumberInt(0), 
+    "createTime" : ISODate("2019-10-06T10:37:29.878+0000"), 
+    "modifyTime" : ISODate("2019-10-06T10:37:29.878+0000"), 
+    "id" : "dfd34a8e-c67d-459c-b9ba-f462f22ef093", 
+    "metaType" : "Association", 
+    "type" : "composition", 
+    "roleAMulti" : "0..n", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "modelType" : "EntityAttrModel", 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.null", 
+    "lineData" : "null"
+}
+{ 
+    "_id" : {
+        "timestamp" : NumberInt(1564059108), 
+        "machineIdentifier" : NumberInt(4594592), 
+        "processIdentifier" : NumberInt(96), 
+        "counter" : NumberInt(16363005)
+    }, 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "ownedEnd" : [
+        {
+            "referencedClass" : "ac69e05a-fa72-474b-8cba-1288bfed118d", 
+            "referencedAttribute" : "payterms", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "f9a196d4-33ab-49e4-b5a1-a47dca24ec37"
+        }, 
+        {
+            "referencedClass" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "referencedAttribute" : "contract", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "4cc26a28-f55c-4e5b-9356-5da62c7bce43"
+        }
+    ], 
+    "status" : "0", 
+    "version" : NumberInt(0), 
+    "createTime" : ISODate("2019-10-06T10:37:29.935+0000"), 
+    "modifyTime" : ISODate("2019-10-06T10:37:29.935+0000"), 
+    "id" : "3e337329-6a0b-4b04-a8f3-385564eeee43", 
+    "metaType" : "Association", 
+    "type" : "composition", 
+    "roleAMulti" : "0..n", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "modelType" : "EntityAttrModel", 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.null", 
+    "lineData" : "null"
+}
+{ 
+    "_id" : {
+        "timestamp" : NumberInt(1564059108), 
+        "machineIdentifier" : NumberInt(4594592), 
+        "processIdentifier" : NumberInt(96), 
+        "counter" : NumberInt(16363004)
+    }, 
+    "metaComponentId" : "3b26ac9e-5f97-4cc3-bae8-336bf7c586be", 
+    "ownedEnd" : [
+        {
+            "referencedClass" : "2a3db2ff-68e9-4190-bdb8-e74b2828c157", 
+            "referencedAttribute" : "materials", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "acaef7cc-34a5-4518-81c9-104319780a04"
+        }, 
+        {
+            "referencedClass" : "2df7c250-aa00-4532-a8f4-80478f03e5a8", 
+            "referencedAttribute" : "contract", 
+            "is_mul_language" : "false", 
+            "status" : "0", 
+            "version" : NumberInt(0), 
+            "id" : "6c49609a-416c-42a6-b1c7-8d275ced5369"
+        }
+    ], 
+    "status" : "0", 
+    "version" : NumberInt(0), 
+    "createTime" : ISODate("2019-10-06T10:37:30.031+0000"), 
+    "modifyTime" : ISODate("2019-10-06T10:37:30.031+0000"), 
+    "id" : "9818d88b-dd47-4b9e-8c76-a852a5197fb6", 
+    "metaType" : "Association", 
+    "type" : "composition", 
+    "roleAMulti" : "0..n", 
+    "parentUri" : "devmodel-cn-mainsub-multiple.contract", 
+    "modelType" : "EntityAttrModel", 
+    "uri" : "devmodel-cn-mainsub-multiple.contract.null", 
+    "lineData" : "null"
+}
